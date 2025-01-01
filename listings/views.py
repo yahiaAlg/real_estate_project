@@ -12,5 +12,8 @@ def listings(request):
     )
 
 
-def listing(request, id):
-    return render(request, "listings/listing.html")
+def listing(request, listing_id):
+    listing = Listing.objects.get(id=listing_id)
+    return render(request, "listings/listing.html", {
+        "listing": listing
+    })
