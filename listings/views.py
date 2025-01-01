@@ -13,7 +13,8 @@ def listings(request):
 
 
 def listing(request, listing_id):
-    listing = Listing.objects.get(id=listing_id)
+    listing = Listing.objects.get(pk=listing_id)
     return render(request, "listings/listing.html", {
-        "listing": listing
+        "listing": listing,
+
     })
