@@ -1,0 +1,839 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2024-12-31T12:59:17.599Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "yahia",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2024-12-31T13:01:11.977Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "dar",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2024-12-31T13:08:06.179Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "dar",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2024-12-31T13:08:27.105Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "dar2",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2024-12-31T13:15:48.403Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "oussama",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2024-12-31T13:15:57.050Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "dar",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Realtor\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2024-12-31T13:18:44.265Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "dar",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Realtor\"]}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add realtor",
+      "content_type": 7,
+      "codename": "add_realtor"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change realtor",
+      "content_type": 7,
+      "codename": "change_realtor"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete realtor",
+      "content_type": 7,
+      "codename": "delete_realtor"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view realtor",
+      "content_type": 7,
+      "codename": "view_realtor"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add listing",
+      "content_type": 8,
+      "codename": "add_listing"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change listing",
+      "content_type": 8,
+      "codename": "change_listing"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete listing",
+      "content_type": 8,
+      "codename": "delete_listing"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view listing",
+      "content_type": 8,
+      "codename": "view_listing"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$uKmCD6whAvAhAT2PtOnDSW$Ko15WdMfFVs+ZC8+o0cmYss5dzNZDWBjdotkkx5CdH4=",
+      "last_login": "2025-01-01T08:51:36.035Z",
+      "is_superuser": true,
+      "username": "yahia",
+      "first_name": "",
+      "last_name": "",
+      "email": "yahialinus21alg@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-12-31T12:35:11.625Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "listings",
+      "model": "realtor"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "listings",
+      "model": "listing"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "3vn7825yia0gzzkljwco5kv3lhfjlll1",
+    "fields": {
+      "session_data": ".eJxVjEsOwiAUAO_C2hD-UJfuewYC7z2kamhS2pXx7oakC93OTObNYjr2Go9OW1yQXZlkl1-WEzypDYGP1O4rh7Xt25L5SPhpO59XpNftbP8GNfU6ttlrX4IQkydpAItSoMEhBfLCUXC6AEgrtaNki5IqaSm0QWMnAFTEPl_bfDfH:1tSuS0:_Ag5X-O_X0o7Q-Qvvf-cVMt8szOyJZ8MJ_drcdAnphU",
+      "expire_date": "2025-01-15T08:51:36.047Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "lyvtlqj5ih0apsytw21j0w22xb87opzs",
+    "fields": {
+      "session_data": ".eJxVjEsOwiAUAO_C2hD-UJfuewYC7z2kamhS2pXx7oakC93OTObNYjr2Go9OW1yQXZlkl1-WEzypDYGP1O4rh7Xt25L5SPhpO59XpNftbP8GNfU6ttlrX4IQkydpAItSoMEhBfLCUXC6AEgrtaNki5IqaSm0QWMnAFTEPl_bfDfH:1tSbT6:5_qgsqPTsaW4eA8fwVb_qLoh28LDjvV2vvWBGFYYHvg",
+      "expire_date": "2025-01-14T12:35:28.840Z"
+    }
+  },
+  {
+    "model": "listings.realtor",
+    "pk": 1,
+    "fields": {
+      "name": "yahia",
+      "photo": "realtors/2024/59/31/Oussama_Profil.jpg",
+      "description": "ksjbfjkqsbkjqsbkbjq",
+      "email": "marcopolo@gmail.com",
+      "phone": "0541086642",
+      "is_mvp": true,
+      "hire_date": "2024-12-31T12:59:17.596Z"
+    }
+  },
+  {
+    "model": "listings.realtor",
+    "pk": 2,
+    "fields": {
+      "name": "oussama",
+      "photo": "realtors/2024/15/31/home-inside-2.jpg",
+      "description": "sdfkjfskjfbqkjsfkjqsb",
+      "email": "aymen@gmail.com",
+      "phone": "541 08 66 81",
+      "is_mvp": false,
+      "hire_date": "2024-12-31T13:15:48.399Z"
+    }
+  },
+  {
+    "model": "listings.realtor",
+    "pk": 3,
+    "fields": {
+      "name": "John Smith",
+      "photo": "photos/realtors/agent1.jpg",
+      "description": "Top performing agent with 10 years of experience",
+      "email": "john.smith@realestate.com",
+      "phone": "555-111-2222",
+      "is_mvp": true,
+      "hire_date": "2025-01-01T08:51:06.074Z"
+    }
+  },
+  {
+    "model": "listings.realtor",
+    "pk": 4,
+    "fields": {
+      "name": "Sarah Johnson",
+      "photo": "photos/realtors/agent2.jpg",
+      "description": "Specializing in luxury properties",
+      "email": "sarah.j@realestate.com",
+      "phone": "555-333-4444",
+      "is_mvp": false,
+      "hire_date": "2025-01-01T08:51:06.102Z"
+    }
+  },
+  {
+    "model": "listings.realtor",
+    "pk": 5,
+    "fields": {
+      "name": "Emily Davis",
+      "photo": "photos/realtors/agent3.jpg",
+      "description": "Expert in first-time homebuyers and affordable housing",
+      "email": "emily.davis@realestate.com",
+      "phone": "555-555-6666",
+      "is_mvp": true,
+      "hire_date": "2025-01-01T08:51:06.112Z"
+    }
+  },
+  {
+    "model": "listings.realtor",
+    "pk": 6,
+    "fields": {
+      "name": "Michael Brown",
+      "photo": "photos/realtors/agent4.jpg",
+      "description": "Specializing in commercial real estate and investment properties",
+      "email": "michael.brown@realestate.com",
+      "phone": "555-777-8888",
+      "is_mvp": false,
+      "hire_date": "2025-01-01T08:51:06.120Z"
+    }
+  },
+  {
+    "model": "listings.realtor",
+    "pk": 7,
+    "fields": {
+      "name": "Olivia Green",
+      "photo": "photos/realtors/agent5.jpg",
+      "description": "Focused on family homes and neighborhood communities",
+      "email": "olivia.green@realestate.com",
+      "phone": "555-999-0000",
+      "is_mvp": false,
+      "hire_date": "2025-01-01T08:51:06.129Z"
+    }
+  },
+  {
+    "model": "listings.realtor",
+    "pk": 8,
+    "fields": {
+      "name": "David Wilson",
+      "photo": "photos/realtors/agent6.jpg",
+      "description": "Leading agent for waterfront and luxury properties",
+      "email": "david.wilson@realestate.com",
+      "phone": "555-123-4567",
+      "is_mvp": true,
+      "hire_date": "2025-01-01T08:51:06.140Z"
+    }
+  },
+  {
+    "model": "listings.realtor",
+    "pk": 9,
+    "fields": {
+      "name": "Sophia Martinez",
+      "photo": "photos/realtors/agent7.jpg",
+      "description": "Expert in relocation and corporate real estate services",
+      "email": "sophia.martinez@realestate.com",
+      "phone": "555-555-7777",
+      "is_mvp": false,
+      "hire_date": "2025-01-01T08:51:06.150Z"
+    }
+  },
+  {
+    "model": "listings.listing",
+    "pk": 1,
+    "fields": {
+      "realtor": 1,
+      "title": "dar2",
+      "address": "setif setif cite 1014 logements",
+      "city": "setif",
+      "state": "setif",
+      "zipcode": "190000",
+      "description": "fqsfkqshfkjqshf",
+      "price": 350000,
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "garage": 1,
+      "sqft": 25,
+      "lot_size": 3.2,
+      "list_date": "2024-12-31T13:01:11.931Z",
+      "photo_main": "listings/2024/01/31/home-1.jpg",
+      "photo_1": "listings/2024/01/31/home-2.jpg",
+      "photo_2": "listings/2024/01/31/home-3.jpg",
+      "photo_3": "listings/2024/01/31/home-4.jpg",
+      "photo_4": "listings/2024/01/31/home-5.jpg",
+      "photo_5": "listings/2024/01/31/home-6.jpg",
+      "photo_6": "listings/2024/01/31/home-inside-1.jpg"
+    }
+  },
+  {
+    "model": "listings.listing",
+    "pk": 2,
+    "fields": {
+      "realtor": 1,
+      "title": "dar",
+      "address": "setif setif cite 200logements",
+      "city": "setif",
+      "state": "setif",
+      "zipcode": "190000",
+      "description": "qsfqshfljqsmflkjqklsf:nqlks",
+      "price": 100000,
+      "bedrooms": 5,
+      "bathrooms": 1,
+      "garage": 1,
+      "sqft": 25,
+      "lot_size": 2.3,
+      "list_date": "2024-12-31T13:08:06.136Z",
+      "photo_main": "listings/2024/08/31/home-5.jpg",
+      "photo_1": "listings/2024/08/31/home-1.jpg",
+      "photo_2": "listings/2024/08/31/home-3.jpg",
+      "photo_3": "listings/2024/08/31/home-2.jpg",
+      "photo_4": "listings/2024/08/31/home-4.jpg",
+      "photo_5": "listings/2024/08/31/home-inside-2.jpg",
+      "photo_6": "listings/2024/08/31/home-inside-6.jpg"
+    }
+  },
+  {
+    "model": "listings.listing",
+    "pk": 3,
+    "fields": {
+      "realtor": 3,
+      "title": "Beautiful Family Home",
+      "address": "123 Main Street",
+      "city": "Beverly Hills",
+      "state": "CA",
+      "zipcode": "90210",
+      "description": "Stunning 4-bedroom home with modern amenities",
+      "price": 750000,
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "garage": 2,
+      "sqft": 2500,
+      "lot_size": 0.5,
+      "list_date": "2025-01-01T08:51:06.160Z",
+      "photo_main": "photos/homes/home1_main.jpg",
+      "photo_1": "photos/homes/home1_1.jpg",
+      "photo_2": "photos/homes/home1_2.jpg",
+      "photo_3": "photos/homes/home1_3.jpg",
+      "photo_4": "photos/homes/home1_4.jpg",
+      "photo_5": "photos/homes/home1_5.jpg",
+      "photo_6": "photos/homes/home1_6.jpg"
+    }
+  },
+  {
+    "model": "listings.listing",
+    "pk": 4,
+    "fields": {
+      "realtor": 4,
+      "title": "Modern Downtown Condo",
+      "address": "456 Park Avenue",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zipcode": "90001",
+      "description": "Luxurious 2-bedroom condo in prime location",
+      "price": 500000,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "garage": 1,
+      "sqft": 1200,
+      "lot_size": 0.0,
+      "list_date": "2025-01-01T08:51:06.169Z",
+      "photo_main": "photos/homes/home2_main.jpg",
+      "photo_1": "photos/homes/home2_1.jpg",
+      "photo_2": "photos/homes/home2_2.jpg",
+      "photo_3": "photos/homes/home2_3.jpg",
+      "photo_4": "photos/homes/home2_4.jpg",
+      "photo_5": "photos/homes/home2_5.jpg",
+      "photo_6": "photos/homes/home2_6.jpg"
+    }
+  },
+  {
+    "model": "listings.listing",
+    "pk": 5,
+    "fields": {
+      "realtor": 5,
+      "title": "Cozy Suburban Cottage",
+      "address": "789 Elm Street",
+      "city": "San Diego",
+      "state": "CA",
+      "zipcode": "92101",
+      "description": "Charming 3-bedroom cottage with a large backyard",
+      "price": 400000,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "garage": 1,
+      "sqft": 1500,
+      "lot_size": 0.3,
+      "list_date": "2025-01-01T08:51:06.179Z",
+      "photo_main": "photos/homes/home3_main.jpg",
+      "photo_1": "photos/homes/home3_1.jpg",
+      "photo_2": "photos/homes/home3_2.jpg",
+      "photo_3": "photos/homes/home3_3.jpg",
+      "photo_4": "photos/homes/home3_4.jpg",
+      "photo_5": "photos/homes/home3_5.jpg",
+      "photo_6": "photos/homes/home3_6.jpg"
+    }
+  },
+  {
+    "model": "listings.listing",
+    "pk": 6,
+    "fields": {
+      "realtor": 6,
+      "title": "Commercial Office Space",
+      "address": "1010 Market Street",
+      "city": "San Francisco",
+      "state": "CA",
+      "zipcode": "94103",
+      "description": "Spacious office building ideal for startups",
+      "price": 1200000,
+      "bedrooms": 0,
+      "bathrooms": 4,
+      "garage": 5,
+      "sqft": 5000,
+      "lot_size": 1.0,
+      "list_date": "2025-01-01T08:51:06.191Z",
+      "photo_main": "photos/homes/home4_main.jpg",
+      "photo_1": "photos/homes/home4_1.jpg",
+      "photo_2": "photos/homes/home4_2.jpg",
+      "photo_3": "photos/homes/home4_3.jpg",
+      "photo_4": "photos/homes/home4_4.jpg",
+      "photo_5": "photos/homes/home4_5.jpg",
+      "photo_6": "photos/homes/home4_6.jpg"
+    }
+  },
+  {
+    "model": "listings.listing",
+    "pk": 7,
+    "fields": {
+      "realtor": 7,
+      "title": "Spacious Family Home",
+      "address": "222 Oak Drive",
+      "city": "Sacramento",
+      "state": "CA",
+      "zipcode": "95814",
+      "description": "Beautiful 5-bedroom home with a pool",
+      "price": 850000,
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "garage": 2,
+      "sqft": 3200,
+      "lot_size": 0.8,
+      "list_date": "2025-01-01T08:51:06.201Z",
+      "photo_main": "photos/homes/home5_main.jpg",
+      "photo_1": "photos/homes/home5_1.jpg",
+      "photo_2": "photos/homes/home5_2.jpg",
+      "photo_3": "photos/homes/home5_3.jpg",
+      "photo_4": "photos/homes/home5_4.jpg",
+      "photo_5": "photos/homes/home5_5.jpg",
+      "photo_6": "photos/homes/home5_6.jpg"
+    }
+  },
+  {
+    "model": "listings.listing",
+    "pk": 8,
+    "fields": {
+      "realtor": 8,
+      "title": "Luxury Beachfront Villa",
+      "address": "333 Ocean Avenue",
+      "city": "Malibu",
+      "state": "CA",
+      "zipcode": "90265",
+      "description": "Exclusive villa with stunning ocean views",
+      "price": 3000000,
+      "bedrooms": 6,
+      "bathrooms": 5,
+      "garage": 3,
+      "sqft": 4500,
+      "lot_size": 1.5,
+      "list_date": "2025-01-01T08:51:06.210Z",
+      "photo_main": "photos/homes/home6_main.jpg",
+      "photo_1": "photos/homes/home6_1.jpg",
+      "photo_2": "photos/homes/home6_2.jpg",
+      "photo_3": "photos/homes/home6_3.jpg",
+      "photo_4": "photos/homes/home6_4.jpg",
+      "photo_5": "photos/homes/home6_5.jpg",
+      "photo_6": "photos/homes/home6_6.jpg"
+    }
+  },
+  {
+    "model": "listings.listing",
+    "pk": 9,
+    "fields": {
+      "realtor": 9,
+      "title": "Modern Apartment in Downtown",
+      "address": "555 City Center Blvd",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zipcode": "90015",
+      "description": "Contemporary 1-bedroom apartment with city views",
+      "price": 350000,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "garage": 1,
+      "sqft": 800,
+      "lot_size": 0.0,
+      "list_date": "2025-01-01T08:51:06.218Z",
+      "photo_main": "photos/homes/home7_main.jpg",
+      "photo_1": "photos/homes/home7_1.jpg",
+      "photo_2": "photos/homes/home7_2.jpg",
+      "photo_3": "photos/homes/home7_3.jpg",
+      "photo_4": "photos/homes/home7_4.jpg",
+      "photo_5": "photos/homes/home7_5.jpg",
+      "photo_6": "photos/homes/home7_6.jpg"
+    }
+  }
+]

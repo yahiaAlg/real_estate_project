@@ -2,6 +2,8 @@ import datetime
 from django.core.management.base import BaseCommand
 from listings.models import Listing, Realtor
 
+import json
+
 
 class Command(BaseCommand):
     help = "Populate database with sample realtors and listings"
