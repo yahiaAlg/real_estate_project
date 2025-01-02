@@ -42,3 +42,17 @@ class Listing(models.Model):
 
     def __str__(self):
         return self.title
+
+
+
+
+class Contact(models.Model):
+    listing = models.ForeignKey(Listing, on_delete=models.SET_NULL, null=True)
+    name = models.CharField(max_length=200)
+    email = models.CharField(max_length=100)
+    phone = models.CharField(max_length=100)
+    message = models.TextField()
+    contact_date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name
