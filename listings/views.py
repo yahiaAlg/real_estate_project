@@ -6,10 +6,13 @@ from django.core.mail import send_mail
 from django.conf import settings
 # Create your views here.
 def listings(request):
-
+    listings = Listing.objects.all()
     return render(
         request,
         "listings/listings.html",
+        {
+            "listings": listings,
+        }
     )
 
 def contact(request, listing_id):

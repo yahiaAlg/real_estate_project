@@ -3,6 +3,7 @@
 {% block title %}home{% endblock title %}
 
 {% block content %}
+  {{request.user.username}}
   <!-- Showcase -->
   <section id="showcase">
     <div class="container text-center">
@@ -175,7 +176,7 @@
                     <i class="fas fa-clock"></i> {{listing.list_date}}</div>
                 </div>
                 <hr>
-                <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+                <a href="{% url "listing" listing.id %}" class="btn btn-primary btn-block">More Info</a>
               </div>
             </div>
           </div>

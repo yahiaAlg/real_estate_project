@@ -18,6 +18,21 @@
 <body>
     {% include "partials/__topbar.html" %}
     {% include "partials/__navbar.html" %}
+
+    <div class="container mt-2">
+
+      {% if messages %}
+        <div class="alert-container">
+          {% for message in messages %}
+            <div class="alert alert-{% if message.tags == "error" %}danger{% else %}{{message.tags}}{% endif %} alert-dismissible fade show" role="alert">
+              {{ message }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+      
+    </div>    
     {% block content %}{% endblock content %}
     {% include "partials/__footer.html" %}
 
