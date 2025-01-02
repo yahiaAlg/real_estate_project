@@ -41,11 +41,11 @@ INSTALLED_APPS = [
     "pages.apps.PagesConfig",
     "listings.apps.ListingsConfig",
     "accounts.apps.AccountsConfig",
+    "whitenoise"
 ]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -74,31 +74,26 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "config.wsgi.application"
 
-STORAGES = {
-    # ...
-    "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-    },
-}
+
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
 # DATABASES = {
 #     "default": {
-#         "ENGINE": "django.db.backends.postgresql",
-#         "NAME":"realestate_db",
-#         "USER":"yahia",
-#         "PASSWORD":"system",
-#         "HOST":"localhost",
-#         "PORT":"5432",
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
 #     }
 # }
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME":"realestate_db",
+        "USER":"yahia",
+        "PASSWORD":"system",
+        "HOST":"localhost",
+        "PORT":"5432",
+    }
+}
 
 
 # Password validation
@@ -162,3 +157,13 @@ EMAIL_HOST_PASSWORD = "reuy ewxz ybtl hevu"
 
 # LOGIN URLS
 LOGIN_URL = "login"
+
+
+
+
+STORAGES = {
+    # ...
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
