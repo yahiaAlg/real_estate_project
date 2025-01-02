@@ -133,6 +133,7 @@
   </section>
 
   <!-- Inquiry Modal -->
+  {% if  request.user.is_authenticated %}
   <div class="modal fade" id="inquiryModal" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -151,15 +152,15 @@
             </div>
             <div class="form-group">
               <label for="name" class="col-form-label">Name:</label>
-              <input type="text" name="name" class="form-control" required>
+              <input type="text" name="name" class="form-control" value="{{request.user.username}}" required>
             </div>
             <div class="form-group">
               <label for="email" class="col-form-label">Email:</label>
-              <input type="email" name="email" class="form-control" required>
+              <input type="email" name="email" class="form-control" value="{{request.user.email}}" required>
             </div>
             <div class="form-group">
               <label for="phone" class="col-form-label">Phone:</label>
-              <input type="text" name="phone" class="form-control">
+              <input type="text" name="phone" class="form-control" value="{{request.user.userprofile.phone}}">
             </div>
             <div class="form-group">
               <label for="message" class="col-form-label">Message:</label>
@@ -172,6 +173,7 @@
       </div>
     </div>
   </div>
+  {% endif %}
 
 
 {% endblock content %}

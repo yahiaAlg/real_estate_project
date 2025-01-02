@@ -23,29 +23,34 @@
         </ul>
 
         <ul class="navbar-nav ml-auto">
-          {% if not request.user.is_authenticated %}
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="{% url "register" %}">
-                <i class="fas fa-user-plus"></i> Register</a>
-            </li>
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="{% url "login" %}">
-                <i class="fas fa-sign-in-alt"></i>
-                Login
-              </a>
-            </li>
-          {% else %}
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="{% url "dashboard" %}">
-                <i class="fas fa-user-plus"></i> Dashboard</a>
-            </li>
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="{% url "logout" %}">
-                <i class="fas fa-sign-in-alt"></i>
-                Logout
-              </a>
-            </li>
-          {% endif %}
+            {% if request.user.is_authenticated %}
+            
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="{% url "dashboard" %}">
+                  <i class="fas fa-user-plus"></i> Dashboard</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="{% url "logout" %}">
+                  <i class="fas fa-sign-in-alt"></i>
+                  Logout
+                </a>
+              </li>
+            
+            {% else %}
+            
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="{% url "register" %}">
+                  <i class="fas fa-user-plus"></i> Register</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="{% url "login" %}">
+                  <i class="fas fa-sign-in-alt"></i>
+                  Login
+                </a>
+              </li>
+            
+            {% endif %}
+
         </ul>
       </div>
     </div>

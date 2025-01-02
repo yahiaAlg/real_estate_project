@@ -1,67 +1,77 @@
-from pprint import pprint
 from django.shortcuts import redirect, render
-from django.contrib import messages
-from listings.models import *
-from django.db.models import Q
-from django.contrib.auth.models import User
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
-from listings.models import Contact
+from django.contrib.auth.models import User
+from django.contrib import messages
 
-
-
+# Create your views here.
 def login(request):
     if request.method == 'POST':
-        username = request.POST['username']
-        password = request.POST['password']
-        user = auth.authenticate(request, username=username, password=password)
-        if user is not None:
-            auth.login(request, user)
-            pprint(request.user.username)
-            messages.success(
-                request, f"You are now logged in as {username}."
-            )
-            return redirect('home')
-        else:
-            messages.error(request, 'Invalid username or password')
-            return redirect('login')
-
+        username = request.POST.get('username', "")
+        password = request.POST.get('password', "")
+        if username and password:
+            current_user = auth.authenticate(request, username=username, password=password)
+            # current_user = User.objects.filter(username=username, password=password)[0]
+            if current_user:
+                auth.login(request, current_user) 
+                # request.session["user"] = current_user
+                # request.session.set_expiry(0)
+                
+                messages.success(
+                    request, "Login Successfull"
+                )
+                return redirect('dashboard')
+            else:
+                messages.error(
+                    request, "Invalid username or password"
+                )
+                return redirect("login")
+    else:
+        return render(request, "accounts/login.html")
+          
+            
+    
     return render(request, "accounts/login.html")
 
 @login_required
 def logout(request):
-    if request.user.is_authenticated:
-        auth.logout(
-            request
-        )
-        messages.success(request, f"You have been logged out.")
-    else:
-        messages.error(request, f"You are not logged in.")
-    return redirect("login")
+    auth.logout(request)
+    # del request.user
+    # del request.session["user"]
 
-@login_required
-def dashboard(request):
-    return render(
-        request,
-        "accounts/dashboard.html"
-    )
-
+    return redirect("home")
 
 
 def register(request):
-    if request.method == 'POST':
-        first_name = request.POST['first_name']
-        last_name = request.POST['last_name']
-        email = request.POST['email']
-        username = request.POST['username']
-        password = request.POST['password']
-        user = User.objects.create_user(username=username, email=email, first_name=first_name, last_name=last_name, password=password)
-        if user:
-            messages.success(request, f"Account created successfully")            
-            user.save()
-            return redirect('login')
+    if request.method == "POST":
+        username = request.POST.get('username', "")
+        first_name = request.POST.get('first_name', "")
+        last_name = request.POST.get('last_name', "")
+        email = request.POST.get('email', "")
+        password = request.POST.get('password', "")
+        password2 = request.POST.get('password2', "")
+        if password != password2:
+            messages.warning(request, "Passwords do not match")
+            return render(request, "accounts/register.html")
         else:
-            messages.error(request, f"Account creation failed")
-            return redirect('register')
-
+                        
+            current_user = User.objects.create_user(
+                username=username, 
+                first_name=first_name, 
+                last_name=last_name, 
+                email=email, 
+                password=password
+            )
+            
+            if current_user:
+                messages.success(request, "User created successfully")
+                return redirect('login')
+            else:
+                messages.error(request, "Failed to create user")
+                return render(request, "accounts/register.html")
+            
     return render(request, "accounts/register.html")
+
+@login_required
+def dashboard(request):
+    return render(request, "accounts/dashboard.html")

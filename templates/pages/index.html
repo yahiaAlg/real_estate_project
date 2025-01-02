@@ -3,7 +3,6 @@
 {% block title %}home{% endblock title %}
 
 {% block content %}
-  {{request.user.username}}
   <!-- Showcase -->
   <section id="showcase">
     <div class="container text-center">
@@ -137,7 +136,7 @@
       {% if listings %}
         {% for listing in listings %}
         
-        
+
           <!-- Listing 1 -->
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="card listing-preview">

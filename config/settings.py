@@ -89,6 +89,8 @@ DATABASES = {
         "NAME":"realestate_db",
         "USER":"yahia",
         "PASSWORD":"system",
+        "HOST":"localhost",
+        "PORT":"5432",
     }
 }
 
@@ -148,4 +150,9 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 # EMAIL CREDENTIALS
 EMAIL_HOST_USER = "yahialinus21alg@gmail.com"
-EMAIL_HOST_PASSWORD = "oirv tasa cpge dyer"
+EMAIL_HOST_PASSWORD = "reuy ewxz ybtl hevu"
+
+
+
+# LOGIN URLS
+LOGIN_URL = "login"
